@@ -3,9 +3,9 @@ Java Basico ao Avançado - IFSP
 
 
 #aula02 
-1) Criar um objeto da class Livro
-2) Digitar dados via Swing(Tela front)
-3) Criar um vetor do objeto Livro c/ 4 LIvro
+. Criar um objeto da class Livro
+. Digitar dados via Swing(Tela front)
+. Criar um vetor do objeto Livro c/ 4 LIvro
   _ _ _ _ _ _ _ _ 
 | Livro          |   - Privada
 |----------------|   + Publica
