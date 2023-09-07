@@ -202,6 +202,9 @@ public class Exercicio8 {
 
 ![image](https://github.com/GabrielAlvesGit/Java-Basico-ao-Avan-ado---IFSP/assets/102634725/5ae15f6c-ded2-4121-9ca3-ad2b07ef4329)
 
+
+
+
 ![image](https://github.com/GabrielAlvesGit/Java-Basico-ao-Avan-ado---IFSP/assets/102634725/878357e1-0403-44e4-b1f3-0b71fdd0791f)
 
 
