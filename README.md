@@ -63,7 +63,7 @@ e. int idade; float media; char bloco
 
 
 
-<sub>
+```
 6. Fazer um algoritmo que dado um número, calcular e escrever se este é positivo ou negativo, e múltiplo ou não de 3, ao mesmo tempo.
 import javax.swing.JOptionPane;
 
@@ -105,4 +105,4 @@ public class Exercicio6 {
 
 ![image](https://github.com/GabrielAlvesGit/Java-Basico-ao-Avan-ado---IFSP/assets/102634725/564b9d62-60ee-41ba-9d75-2d07a8739d4b)
 
-</sub>
+```
