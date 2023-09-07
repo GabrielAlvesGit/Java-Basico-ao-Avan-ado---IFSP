@@ -56,12 +56,9 @@ e. int idade; float media; char bloco
 
 11. Tendo como dados de entrada a altura e o sexo de uma pessoa, construa um algoritmo que calcule seu peso ideal, utilizando as seguintes fórmulas:
 • Para Homens: (72.7 *h) – 58; • Para Mulheres: (62.1 * h) – 44.7
-
-
-
 ```
 
-
+_________________________________________________________________________________________________________________________________________________________________________________________
 
 ```
 6. Fazer um algoritmo que dado um número, calcular e escrever se este é positivo ou negativo, e múltiplo ou não de 3, ao mesmo tempo.
