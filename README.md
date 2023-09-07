@@ -117,6 +117,6 @@ public class Exercicio6 {
 <picture>
   <source![image]()>
 	<source media="(prefers-color-scheme: dark)" srcset="[https://user-images.githubusercontent.com/25423296/163456776-7f95b81a-f1ed-45f7-b7ab-8fa810d529fa.png](https://github.com/GabrielAlvesGit/Java-Basico-ao-Avan-ado---IFSP/assets/102634725/6550c5ca-ff58-4651-b64c-080043916576)https://github.com/GabrielAlvesGit/Java-Basico-ao-Avan-ado---IFSP/assets/102634725/6550c5ca-ff58-4651-b64c-080043916576">
-  </picture>
+  
 </picture>
-</sub>
+
