@@ -95,3 +95,6 @@ public class Exercicio6 {
 ![image](https://github.com/GabrielAlvesGit/Java-Basico-ao-Avan-ado---IFSP/assets/102634725/618df599-a139-4efa-b905-4d9e6b3a3a33)
 
 ```
+
+![image](https://github.com/GabrielAlvesGit/Java-Basico-ao-Avan-ado---IFSP/assets/102634725/6550c5ca-ff58-4651-b64c-080043916576)
+
