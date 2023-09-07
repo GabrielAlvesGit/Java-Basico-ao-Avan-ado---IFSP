@@ -67,6 +67,8 @@ e. int idade; float media; char bloco
 6. Fazer um algoritmo que dado um número, calcular e escrever se este é positivo ou negativo, e múltiplo ou não de 3, ao mesmo tempo.
 import javax.swing.JOptionPane;
 
+import javax.swing.JOptionPane;
+
 public class Exercicio6 {
 
 	    public static void main(String[] args) {
@@ -79,11 +81,11 @@ public class Exercicio6 {
 
 	           
 	            if (numero > 0) {
-	                JOptionPane.showMessageDialog(null, "O número é positivo.");
+	                JOptionPane.showMessageDialog(null, "O número é positivo" + numero);
 	            } else if (numero < 0) {
-	                JOptionPane.showMessageDialog(null, "O número é negativo.");
+	                JOptionPane.showMessageDialog(null, "O número é negativo" + numero);
 	            } else {
-	                JOptionPane.showMessageDialog(null, "O número é zero.");
+	                JOptionPane.showMessageDialog(null, "O número é zero" + numero);
 	            }
 
 	            
@@ -96,8 +98,10 @@ public class Exercicio6 {
 	            JOptionPane.showMessageDialog(null, "Por favor, insira um número válido.");
 	        }
 	    }
-
 }
+
+![image](https://github.com/GabrielAlvesGit/Java-Basico-ao-Avan-ado---IFSP/assets/102634725/f5e3f380-4b37-42a9-a5b7-9194ccdc5171)
+
 
 ![image](https://github.com/GabrielAlvesGit/Java-Basico-ao-Avan-ado---IFSP/assets/102634725/564b9d62-60ee-41ba-9d75-2d07a8739d4b)
 
