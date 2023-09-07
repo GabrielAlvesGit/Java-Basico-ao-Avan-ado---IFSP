@@ -258,7 +258,6 @@ public class Exercicio7 {
 
 ```
 8. Fazer um algoritmo que dado três valores A, B e C verificar se eles formam um triângulo. Formando triângulo, dizer se é triângulo equilátero, isósceles ou escaleno.
-
 import javax.swing.JOptionPane;
 
 public class Exercicio8 {
