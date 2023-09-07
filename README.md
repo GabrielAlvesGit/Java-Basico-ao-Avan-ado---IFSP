@@ -200,10 +200,64 @@ public class Exercicio8 {
 
 ```
 
-
-
-
 ![image](https://github.com/GabrielAlvesGit/Java-Basico-ao-Avan-ado---IFSP/assets/102634725/06b183ab-2b57-4878-b0e8-b6d0cc8315e0)
 
 ![image](https://github.com/GabrielAlvesGit/Java-Basico-ao-Avan-ado---IFSP/assets/102634725/a4ea7e59-8ffb-4c9b-a59c-9a18d52bcfb0)
+
+
+
+```
+9. Implementar um algoritmo capaz de encontrar o maior dentre 3 números quaisquer. Suponha todos serem distintos.
+
+import javax.swing.JOptionPane;
+
+public class Exercicio9 {
+	public static void main(String[] args) {
+		
+		
+		String input1 = JOptionPane.showInputDialog("Digitar o primeiro número:");
+		String input2 = JOptionPane.showInputDialog("Digitar o segundo número:");
+		String input3 = JOptionPane.showInputDialog("Digitar o terceiro número:");
+		
+		int numero1 = Integer.parseInt(input1);
+		int numero2 = Integer.parseInt(input2);
+		int numero3 = Integer.parseInt(input3);
+		
+		if(isNumeric(input1) && isNumeric(input2) && isNumeric(input3)) {
+			
+			int maior = numero1;
+			
+			if(numero2> maior) {
+				maior = numero2;
+			}
+			if(numero3> maior) {
+				maior = numero3;
+			}
+			
+			JOptionPane.showMessageDialog(null,"Maior número é:" + maior);
+		}else{
+			JOptionPane.showMessageDialog(null,"Por favor, insira valores numéricos validos");
+		}
+	}
+	public static boolean isNumeric(String str) {
+        if (str == null || str.isEmpty()) {
+            return false;
+        }
+        try {
+            Integer.parseInt(str);
+            return true;
+        } catch (NumberFormatException e) {
+            return false;
+        }
+    }
+}
+
+```
+![image](https://github.com/GabrielAlvesGit/Java-Basico-ao-Avan-ado---IFSP/assets/102634725/cbf11c12-9d83-42cc-8fa4-0870c3b6cf52)
+
+![image](https://github.com/GabrielAlvesGit/Java-Basico-ao-Avan-ado---IFSP/assets/102634725/312a2009-8b31-49bd-a837-6fa468616532)
+
+![image](https://github.com/GabrielAlvesGit/Java-Basico-ao-Avan-ado---IFSP/assets/102634725/7d39de62-d7f8-4e9f-adeb-5dcdf692e21c)
+
+
 
