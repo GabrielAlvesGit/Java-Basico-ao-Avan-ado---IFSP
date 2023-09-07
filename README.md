@@ -101,3 +101,158 @@ public class Exercicio6 {
 
 ![image](https://github.com/GabrielAlvesGit/Java-Basico-ao-Avan-ado---IFSP/assets/102634725/f5413e60-29cc-4759-ad3a-7b7f59ae64ba)
 
+
+
+```
+7. Elabore um algoritmo que calcule o valor do fatorial de um número informado pelo usuário.Lembrando que 0! = 1.
+
+import javax.swing.JOptionPane;
+
+public class Exercicio7 {
+	public static void main(String[] args) {
+		
+	
+	 int numero = 0;
+     boolean entrada = false;
+	
+	while(!entrada) {
+		String input = JOptionPane.showInputDialog("Digite um numero:");
+		
+		if(input != null && input.matches("\\d+")) {
+			numero = Integer.parseInt(input);
+			entrada = true;
+			}
+		else {
+			JOptionPane.showInputDialog(null, "Inserir um número válido.");
+		}
+		
+		if(numero < 0) {
+			JOptionPane.showConfirmDialog(null,"O Fatorial não está definido para numero negativo.");
+		}
+		else {
+			int fatorial = 1;
+            for (int i = 1; i <= numero; i++) {
+                fatorial *= i;
+			}
+			
+            JOptionPane.showMessageDialog(null, "O fatorial de " + numero + " é " + fatorial);
+		}
+	}
+	}
+	
+}
+
+```
+
+![image](https://github.com/GabrielAlvesGit/Java-Basico-ao-Avan-ado---IFSP/assets/102634725/ca240138-d2df-42ea-b31f-9d37c1b33d87)
+
+
+```
+8. Fazer um algoritmo que dado três valores A, B e C verificar se eles formam um triângulo. Formando triângulo, dizer se é triângulo equilátero, isósceles ou escaleno.
+
+import javax.swing.JOptionPane;
+
+public class Exercicio8 {
+    public static void main(String[] args) {
+        float a, b, c;
+
+       
+        String inputA = JOptionPane.showInputDialog("Digite o valor de A:");
+        if (isNumeric(inputA)) {
+            a = Float.parseFloat(inputA);
+
+           
+            String inputB = JOptionPane.showInputDialog("Digite o valor de B:");
+            if (isNumeric(inputB)) {
+                b = Float.parseFloat(inputB);
+
+               
+                String inputC = JOptionPane.showInputDialog("Digite o valor de C:");
+                if (isNumeric(inputC)) {
+                    c = Float.parseFloat(inputC);
+                    
+                    if (c > a + b || a > b + c || b > a + c) {
+                        JOptionPane.showMessageDialog(null, "NÃO FORMAM UM TRIÂNGULO");
+                    } else if (a != b && a != c && b != c) {
+                        JOptionPane.showMessageDialog(null, "TRIÂNGULO ESCALENO");
+                    } else if (a == b && a == c) {
+                        JOptionPane.showMessageDialog(null, "TRIÂNGULO EQUILÁTERO");
+                    } else if (a == b || a == c || b == c) {
+                        JOptionPane.showMessageDialog(null, "TRIÂNGULO ISÓSCELES");
+                    }
+                } else {
+                    JOptionPane.showMessageDialog(null, "Por favor, insira um valor válido para C.");
+                }
+            } else {
+                JOptionPane.showMessageDialog(null, "Por favor, insira um valor válido para B.");
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "Por favor, insira um valor válido para A.");
+        }
+    }
+
+   
+    public static boolean isNumeric(String str) {
+        return str != null && str.matches("-?\\d+(\\.\\d+)?");
+    }
+}
+
+
+```
+
+![image](https://github.com/GabrielAlvesGit/Java-Basico-ao-Avan-ado---IFSP/assets/102634725/5ae15f6c-ded2-4121-9ca3-ad2b07ef4329)
+
+![image](https://github.com/GabrielAlvesGit/Java-Basico-ao-Avan-ado---IFSP/assets/102634725/878357e1-0403-44e4-b1f3-0b71fdd0791f)
+
+
+
+
+```
+9. Implementar um algoritmo capaz de encontrar o maior dentre 3 números quaisquer. Suponha todos serem distintos.
+
+import javax.swing.JOptionPane;
+
+public class Exercicio9 {
+	public static void main(String[] args) {
+		
+		
+		String input1 = JOptionPane.showInputDialog("Digitar o primeiro número:");
+		String input2 = JOptionPane.showInputDialog("Digitar o segundo número:");
+		String input3 = JOptionPane.showInputDialog("Digitar o terceiro número:");
+		
+		int numero1 = Integer.parseInt(input1);
+		int numero2 = Integer.parseInt(input2);
+		int numero3 = Integer.parseInt(input3);
+		
+		if(isNumeric(input1) && isNumeric(input2) && isNumeric(input3)) {
+			
+			int maior = numero1;
+			
+			if(numero2> maior) {
+				maior = numero2;
+			}
+			if(numero3> maior) {
+				maior = numero3;
+			}
+			
+			JOptionPane.showMessageDialog(null,"Maior número é:" + maior);
+		}else{
+			JOptionPane.showMessageDialog(null,"Por favor, insira valores numéricos validos");
+		}
+	}
+	public static boolean isNumeric(String str) {
+        if (str == null || str.isEmpty()) {
+            return false;
+        }
+        try {
+            Integer.parseInt(str);
+            return true;
+        } catch (NumberFormatException e) {
+            return false;
+        }
+    }
+}
+
+```
+
+
