@@ -298,3 +298,49 @@ public class Exercicio10 {
 
 ![image](https://github.com/GabrielAlvesGit/Java-Basico-ao-Avan-ado---IFSP/assets/102634725/d82b8cfe-56fb-42ca-880c-937ae3ac4612)
 
+```
+11. Tendo como dados de entrada a altura e o sexo de uma pessoa, construa um algoritmo que calcule seu peso ideal, utilizando as seguintes fórmulas:
+
+import javax.swing.JOptionPane;
+
+public class Exercicio11 {
+	public static void main(String[] args) {
+		boolean isDecimal = true;
+		String inputAltura = JOptionPane.showInputDialog("Digite a altura (em metros):");
+		
+		for(char c : inputAltura.toCharArray()) {
+			if (!Character.isDigit(c) && c != '.') {
+                isDecimal = false;
+                break;
+            }
+		}
+		if(isDecimal) {
+			double altura = Double.parseDouble(inputAltura);
+			
+			String sexo = JOptionPane.showInputDialog("Digite seu sexo:");
+			
+			double pesoIdeal = 0.0;
+			
+			if(sexo.equalsIgnoreCase("M")) {
+				pesoIdeal =(72.7 * altura) -58;
+			}
+			else if (sexo.equalsIgnoreCase("F")) {
+                pesoIdeal = (62.1 * altura) - 44.7;
+            } else {
+                JOptionPane.showMessageDialog(null, "Por favor, insira M ou F como sexo.");
+                return;
+            }
+
+            JOptionPane.showMessageDialog(null, "O peso ideal é: " + pesoIdeal + " kg");
+        } else {
+            JOptionPane.showMessageDialog(null, "Por favor, insira uma altura válida (número decimal).");
+        }
+	}
+}
+```
+
+![image](https://github.com/GabrielAlvesGit/Java-Basico-ao-Avan-ado---IFSP/assets/102634725/c1101025-b145-4c0e-bb13-f1f13d37b5be)
+![image](https://github.com/GabrielAlvesGit/Java-Basico-ao-Avan-ado---IFSP/assets/102634725/7c3daa51-720b-4790-b855-215461365c57)
+![image](https://github.com/GabrielAlvesGit/Java-Basico-ao-Avan-ado---IFSP/assets/102634725/14371db0-d437-4a51-a26a-2a94e0313e18)
+
+
