@@ -259,5 +259,42 @@ public class Exercicio9 {
 
 ![image](https://github.com/GabrielAlvesGit/Java-Basico-ao-Avan-ado---IFSP/assets/102634725/7d39de62-d7f8-4e9f-adeb-5dcdf692e21c)
 
+![image](https://github.com/GabrielAlvesGit/Java-Basico-ao-Avan-ado---IFSP/assets/102634725/6308ec92-555d-41ca-a1cd-fd6a9cfde803)
 
+
+```
+10. Escrever um programa que leia uma sequência numérica de valores inteiros e positivos. O programa deverá somar todos os números digitados pelo usuário e apresentar o resultado na tela. A leitura dos dados deverá parar quando o usuário digitar um valor negativo.
+
+import javax.swing.JOptionPane;
+
+public class Exercicio10 {
+	public static void main(String[] args) {
+		int soma = 0;
+		int valor;
+		
+		while(true) {
+			String input = JOptionPane.showInputDialog("Digite um valor inteiro positivo (ou um valor negativo para sair):");
+			
+			try {
+				valor = Integer.parseInt(input);
+			} catch(NumberFormatException e) {
+				JOptionPane.showMessageDialog(null,"Por Favor, insira um valor inteiro válido.");
+				continue;
+			}
+			
+			if(valor >= 0) {
+				soma += valor;
+			} else {
+				break;
+			}
+			
+		}
+		JOptionPane.showMessageDialog(null, "OPS! você digitou o números negativo: " + soma);
+	}
+}
+```
+
+![image](https://github.com/GabrielAlvesGit/Java-Basico-ao-Avan-ado---IFSP/assets/102634725/1f16e0c6-9843-4ed1-9efb-f44eed678c29)
+
+![image](https://github.com/GabrielAlvesGit/Java-Basico-ao-Avan-ado---IFSP/assets/102634725/d82b8cfe-56fb-42ca-880c-937ae3ac4612)
 
