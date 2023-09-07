@@ -62,9 +62,63 @@ e. int idade; float media; char bloco
 R: e. int idade; float media; char bloco
 ```
 ```
-1. Com relação a declaração de variáveis em Linguagem Java, assinale a alternativa correta:R:
-R: e. int idade; float media; char bloco
+2. Desenvolver um algoritmo que leia um número inteiro e verifique se o número é divisível por 5 e por 3 ao mesmo tempo. A solução deverá ser impressa na tela.
+import javax.swing.JOptionPane;
+
+public class Exercicio2{
+    public static void main(String[] args) {
+        String input = JOptionPane.showInputDialog("Digite um número inteiro:");
+
+        try {
+            int numero = Integer.parseInt(input);
+
+            if (numero % 5 == 0 && numero % 3 == 0) {
+                JOptionPane.showMessageDialog(null, "O número É divisível por 5 e 3 ao mesmo tempo.");
+            } else {
+                JOptionPane.showMessageDialog(null, "O número Não é divisível por 5 e 3 ao mesmo tempo.");
+            }
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(null, "Por favor, insira um número inteiro válido.");
+        }
+    }
+
+}
 ```
+![image](https://github.com/GabrielAlvesGit/Java-Basico-ao-Avan-ado---IFSP/assets/102634725/6596ee04-6915-44e8-9ffc-c268c110b2e9)
+
+```
+3. Dados quatro números distintos digitados pelo usuário, desenvolver um algoritmo que determine e imprima a soma dos três números menores.
+import javax.swing.JOptionPane;
+
+public class Exercicio3 {
+	  public static void main(String[] args) {
+	        int numero1, numero2, numero3, numero4, soma;
+		  
+		       
+		        numero1 = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro número:"));
+		        numero2 = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo número:"));
+		        numero3 = Integer.parseInt(JOptionPane.showInputDialog("Digite o terceiro número:"));
+		        numero4 = Integer.parseInt(JOptionPane.showInputDialog("Digite o quarto número:"));
+
+		       
+		        soma = calcularSomaTresMenores(numero1, numero2, numero3, numero4);
+
+		        
+		        JOptionPane.showMessageDialog(null, "A soma dos três menores números é: " + soma);
+		    }
+
+		    
+		    public static int calcularSomaTresMenores(int num1, int num2, int num3, int num4) {
+		        int[] numeros = { num1, num2, num3, num4 };
+		        java.util.Arrays.sort(numeros); 
+		        return numeros[0] + numeros[1] + numeros[2];
+		    }
+	
+}
+
+```
+![image](https://github.com/GabrielAlvesGit/Java-Basico-ao-Avan-ado---IFSP/assets/102634725/37cdc9ba-f9c1-4b37-8a82-798ccc8a7c4b)
+
 
 ```
 6. Fazer um algoritmo que dado um número, calcular e escrever se este é positivo ou negativo, e múltiplo ou não de 3, ao mesmo tempo.
