@@ -119,11 +119,59 @@ public class Exercicio3 {
 ```
 ![image](https://github.com/GabrielAlvesGit/Java-Basico-ao-Avan-ado---IFSP/assets/102634725/37cdc9ba-f9c1-4b37-8a82-798ccc8a7c4b)
 
+```
+4. Desenvolver um algoritmo para pedir um mês (em número) e o programa deverá imprimir na tela o correspondente por extenso. Por exemplo: 03 – Março ou 09 - Setembro.
+import javax.swing.JOptionPane;
+
+public class Exercicio4 {
+
+    private int dia;
+    private String mes; // Alterado para uma String
+
+    public static void main(String[] args) {
+        Exercicio4 exercicio = new Exercicio4();
+
+        exercicio.dia = Integer.parseInt(JOptionPane.showInputDialog("Digite o Dia:"));
+        exercicio.mes = JOptionPane.showInputDialog("Digite o Mês:");
+
+        JOptionPane.showMessageDialog(null, "Você digitou o dia: " + exercicio.dia + " e o mês: " + exercicio.mes);
+    }
+}
+
+```
+![image](https://github.com/GabrielAlvesGit/Java-Basico-ao-Avan-ado---IFSP/assets/102634725/57b30d2f-ec0f-4bd7-9de5-e790379b6488)
+
+```
+5. Faça um algoritmo que leia um número positivo e inteiro N, some todos os números inteiros de 1 a N, e mostre o resultado na tela.
+import javax.swing.JOptionPane;
+
+public class Exercicio5 {
+	 public static void main(String[] args) {
+	        String input = JOptionPane.showInputDialog("Digite um número inteiro positivo N:");
+	        
+	        try {
+	            int N = Integer.parseInt(input);
+	            if (N >= 1) {
+	                int soma = 0;
+	                for (int i = 1; i <= N; i++) {
+	                    soma += i;
+	                }
+	                JOptionPane.showMessageDialog(null, "A soma dos números de 1 a " + N + " é: " + soma);
+	            } else {
+	                JOptionPane.showMessageDialog(null, "Digite um número inteiro positivo maior ou igual a 1.");
+	            }
+	        } catch (NumberFormatException ex) {
+	            JOptionPane.showMessageDialog(null, "Digite um número inteiro válido.");
+	        }
+	    }
+
+}
+```
+![image](https://github.com/GabrielAlvesGit/Java-Basico-ao-Avan-ado---IFSP/assets/102634725/45d5f219-6b68-4fab-acf3-08c762714c1a)
+
 
 ```
 6. Fazer um algoritmo que dado um número, calcular e escrever se este é positivo ou negativo, e múltiplo ou não de 3, ao mesmo tempo.
-import javax.swing.JOptionPane;
-
 import javax.swing.JOptionPane;
 
 public class Exercicio6 {
@@ -166,7 +214,6 @@ public class Exercicio6 {
 
 ```
 7. Elabore um algoritmo que calcule o valor do fatorial de um número informado pelo usuário.Lembrando que 0! = 1.
-
 import javax.swing.JOptionPane;
 
 public class Exercicio7 {
@@ -269,7 +316,6 @@ public class Exercicio8 {
 
 ```
 9. Implementar um algoritmo capaz de encontrar o maior dentre 3 números quaisquer. Suponha todos serem distintos.
-
 import javax.swing.JOptionPane;
 
 public class Exercicio9 {
@@ -325,7 +371,6 @@ public class Exercicio9 {
 
 ```
 10. Escrever um programa que leia uma sequência numérica de valores inteiros e positivos. O programa deverá somar todos os números digitados pelo usuário e apresentar o resultado na tela. A leitura dos dados deverá parar quando o usuário digitar um valor negativo.
-
 import javax.swing.JOptionPane;
 
 public class Exercicio10 {
@@ -361,7 +406,6 @@ public class Exercicio10 {
 
 ```
 11. Tendo como dados de entrada a altura e o sexo de uma pessoa, construa um algoritmo que calcule seu peso ideal, utilizando as seguintes fórmulas:
-
 import javax.swing.JOptionPane;
 
 public class Exercicio11 {
