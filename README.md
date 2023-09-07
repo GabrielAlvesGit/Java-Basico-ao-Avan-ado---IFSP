@@ -149,3 +149,60 @@ public class Exercicio7 {
 
 
 
+```
+8. Fazer um algoritmo que dado três valores A, B e C verificar se eles formam um triângulo. Formando triângulo, dizer se é triângulo equilátero, isósceles ou escaleno.
+
+import javax.swing.JOptionPane;
+
+public class Exercicio8 {
+    public static void main(String[] args) {
+        float a, b, c;
+
+       
+        String inputA = JOptionPane.showInputDialog("Digite o valor de A:");
+        if (isNumeric(inputA)) {
+            a = Float.parseFloat(inputA);
+
+           
+            String inputB = JOptionPane.showInputDialog("Digite o valor de B:");
+            if (isNumeric(inputB)) {
+                b = Float.parseFloat(inputB);
+
+               
+                String inputC = JOptionPane.showInputDialog("Digite o valor de C:");
+                if (isNumeric(inputC)) {
+                    c = Float.parseFloat(inputC);
+                    
+                    if (c > a + b || a > b + c || b > a + c) {
+                        JOptionPane.showMessageDialog(null, "NÃO FORMAM UM TRIÂNGULO");
+                    } else if (a != b && a != c && b != c) {
+                        JOptionPane.showMessageDialog(null, "TRIÂNGULO ESCALENO");
+                    } else if (a == b && a == c) {
+                        JOptionPane.showMessageDialog(null, "TRIÂNGULO EQUILÁTERO");
+                    } else if (a == b || a == c || b == c) {
+                        JOptionPane.showMessageDialog(null, "TRIÂNGULO ISÓSCELES");
+                    }
+                } else {
+                    JOptionPane.showMessageDialog(null, "Por favor, insira um valor válido para C.");
+                }
+            } else {
+                JOptionPane.showMessageDialog(null, "Por favor, insira um valor válido para B.");
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "Por favor, insira um valor válido para A.");
+        }
+    }
+
+   
+    public static boolean isNumeric(String str) {
+        return str != null && str.matches("-?\\d+(\\.\\d+)?");
+    }
+}
+
+```
+
+![image](https://github.com/GabrielAlvesGit/Java-Basico-ao-Avan-ado---IFSP/assets/102634725/7a747c91-db81-4132-ba01-d60831ba85e3)
+
+![image](https://github.com/GabrielAlvesGit/Java-Basico-ao-Avan-ado---IFSP/assets/102634725/eecd22d4-5f00-48b5-bad1-a737ef056da0)
+
+![image](https://github.com/GabrielAlvesGit/Java-Basico-ao-Avan-ado---IFSP/assets/102634725/f787ec33-6d55-45ae-96ca-edcf721aa3ef)
